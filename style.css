@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --primary-color: #0891b2;
+    --project-1-color: #9e1c1c;
+    --project-2-color: #7c75ca;
+    --project-3-color: #5e8f4d;
+    --project-4-color: #c363b4;
+    --project-5-color: #d88f39;
+    --project-6-color: #4ba2d2;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.playfair-display {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    
+    
+}
