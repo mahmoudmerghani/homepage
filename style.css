@@ -13,6 +13,12 @@
     --project-4-color: #c363b4;
     --project-5-color: #d88f39;
     --project-6-color: #4ba2d2;
+    --primary-shadow: rgba(149, 157, 165, 0.4) 5px 8px 10px;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: 1.4;
 }
 
 .roboto {
@@ -31,7 +37,82 @@
     font-style: normal;
 }
 
-body {
+.container {
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 2rem;
     
-    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.background {
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: left bottom;
+    transform: rotate(-15deg);
+    width: 200vw;
+    height: 100vh;
+    z-index: -5;
+}
+
+.text {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: var(--primary-shadow);
+    flex: 1;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin-block: 1rem;
+    font-weight: 700;
+}
+
+.text p {
+    margin-block: 1rem;
+}
+
+svg {
+    height: 1.5rem;
+}
+
+.text .socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.image {
+    position: relative;
+}
+.image .title {
+    position: absolute;
+    font-size: 2rem;
+    width: 100%;
+    bottom: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.image {
+    max-width: 350px;
+    flex-grow: 1;
+    flex-basis: 100px; 
+    margin: -1rem;
 }
