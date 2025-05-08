@@ -49,6 +49,7 @@ section:not(:first-child) {
 }
 
 img {
+    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -119,6 +120,20 @@ svg {
     bottom: 1rem;
     color: white;
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    .about .container {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    .about .image {
+        margin-right: 0;
+        max-width: 500px;
+    }
+    
 }
 
 
@@ -246,4 +261,32 @@ svg {
 
 .contact .socials svg {
     height: 2rem;
+}
+
+@media (max-width: 767px) {
+    .contact .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .container {
+        padding: initial;
+    }
+
+    .contact h2 {
+        text-align: center;
+    }
+
+    .contact .text {
+        padding: 1rem;
+    }
+
+    .contact .socials {
+        justify-content: center;
+    }
+
+    .contact .image {
+        max-width: 500px;
+    }
+
 }
