@@ -197,3 +197,53 @@ svg {
 .work .card:nth-child(6) .screenshot {
     background-color: var(--project-6-color);
 }
+
+
+.contact {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.contact .container {
+    padding-block: 3rem;
+    min-height: initial;
+    display: flex;
+    gap: 2rem;
+}
+
+.contact .container > * {
+    flex: 1;
+}
+
+.contact .image{
+    max-width: 350px;
+}
+
+.contact .text > *:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.contact .phone,
+.contact .email {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact .phone svg,
+.contact .email svg {
+    fill: white;
+}
+
+.contact .info > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.contact .socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact .socials svg {
+    height: 2rem;
+}
