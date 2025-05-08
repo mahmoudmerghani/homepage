@@ -13,7 +13,7 @@
     --project-4-color: #c363b4;
     --project-5-color: #d88f39;
     --project-6-color: #4ba2d2;
-    --primary-shadow: rgba(149, 157, 165, 0.4) 5px 8px 10px;
+    --primary-shadow: rgba(149, 157, 165, 0.4) 0px 6px 10px 4px;
 }
 
 body {
@@ -37,8 +37,12 @@ body {
     font-style: normal;
 }
 
+section:not(:first-child) {
+    margin-top: 3rem;
+}
+
 .container {
-    max-width: 1000px;
+    max-width: 1024px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 0 2rem;
@@ -50,6 +54,16 @@ img {
     height: auto;
 }
 
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+svg {
+    height: 1.5rem;
+}
+
+
 .about .container {
     display: flex;
     justify-content: center;
@@ -57,9 +71,7 @@ img {
 
 }
 
-
-
-.background {
+.about .background {
     background-color: var(--primary-color);
     position: absolute;
     left: 0;
@@ -71,37 +83,36 @@ img {
     z-index: -5;
 }
 
-.text {
+.about .text {
     background-color: white;
     padding: 2rem;
     box-shadow: var(--primary-shadow);
     flex: 1;
 }
 
-.text h2 {
-    font-size: 2rem;
-    margin-block: 1rem;
-    font-weight: 700;
-}
-
-.text p {
+.about .text h2 {
     margin-block: 1rem;
 }
 
-svg {
-    height: 1.5rem;
+.about .text p {
+    margin-block: 1rem;
 }
 
-.text .socials {
+.about .text .socials {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
 }
 
-.image {
+.about .image {
     position: relative;
+    max-width: 350px;
+    flex-grow: 1;
+    flex-basis: 100px; 
+    margin-right: -1rem;
 }
-.image .title {
+
+.about .image .title {
     position: absolute;
     font-size: 2rem;
     width: 100%;
@@ -110,9 +121,79 @@ svg {
     text-align: center;
 }
 
-.image {
-    max-width: 350px;
-    flex-grow: 1;
-    flex-basis: 100px; 
-    margin: -1rem;
+
+.work h2 {
+    margin-bottom: 1rem;
+}
+
+.work .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.work .card {
+    box-shadow: var(--primary-shadow);
+}
+
+.work .card .screenshot {
+
+    background-color: var(--primary-color);
+}
+
+.work .screenshot h3 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.work .card .text {
+    padding: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.work .card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+
+.work .card svg {
+    height: 1.3rem;
+    vertical-align: bottom;
+}
+
+.work .card svg:not(:first-child) {
+    margin-left: 0.5rem;
+}
+
+.work .card .project-name {
+    font-size: 1.4rem;
+}
+
+.work .card:nth-child(1) .screenshot {
+    background-color: var(--project-1-color);
+}
+
+.work .card:nth-child(2) .screenshot {
+    background-color: var(--project-2-color); 
+}
+
+.work .card:nth-child(3) .screenshot {
+    background-color: var(--project-3-color);
+}
+
+.work .card:nth-child(4) .screenshot {
+    background-color: var(--project-4-color);
+}
+
+.work .card:nth-child(5) .screenshot {
+    background-color: var(--project-5-color);
+}
+
+.work .card:nth-child(6) .screenshot {
+    background-color: var(--project-6-color);
 }
